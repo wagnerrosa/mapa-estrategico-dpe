@@ -40,6 +40,16 @@ h3
     border-top: 50px solid transparent
     border-bottom: 50px solid transparent
 
+@media (max-width: 992px)
+  h3
+    margin: 0 auto 20px auto
+    padding: 30px
+    max-width: 350px
+    text-align: center
+    border-radius: 5px
+    &::after
+      border: none
+
 .linha-padding
   padding: 39px 5px
   margin-top: 50px
@@ -103,7 +113,7 @@ h2
     background-color: $roxo
     text-align: center
     position: relative
-    padding: 30px 0
+    padding: 40px 0
     //height: 70px
     max-width: 340px
     font-size: 0.8rem
@@ -113,22 +123,18 @@ h2
     -moz-border-radius-topright: 35px
     border-top-left-radius: 35px
     border-top-right-radius: 35px
-    //&::after
-      content: ""
-      width: 0
-      height: 0
-      border-right: 150px solid transparent
-      border-left: 150px solid transparent
-      border-bottom: 34px solid $roxo
-      position: absolute
-      top: -34px
-      left: 0
 
+@media (max-width: 992px)
+  #linha-dois
+    p
+      font-size: 1rem
+      padding: 40px 20px
 
+      &:first-child
+        margin-top: 10px
 
 // linha-tres
 #linha-tres
-  //padding: 12px //colocar em todos
   .borda-vermelha
     border: 5px solid $vermelho
     border-radius: 20px
@@ -143,11 +149,13 @@ h2
 
     #borda-vermelha-span-um
       bottom: -9px
-      left: 17%
+      left: 50%
+      margin-left: -79px
 
     #borda-vermelha-span-dois
         bottom: -9px
-        left: 28%
+        left: 50%
+        margin-left: -86.5px
         padding: 0 5px
 
   h3
@@ -174,20 +182,8 @@ h2
     -moz-border-radius: 10px
     border-radius: 10px
 
-    //&::after
-      content: ""
-      width: 0
-      height: 0
-      border-right: 40px solid transparent
-      border-left: 40px solid transparent
-      border-bottom: 34px solid $vermelho
-      position: absolute
-      top: -34px
-      left: 0
-
 // linha-quatro
 #linha-quatro
-  //padding: 12px //colocar em todos
   .borda-amarela
     border: 5px solid $amarelo
     border-radius: 20px
@@ -219,16 +215,7 @@ h2
     bottom: -9px
     left: 75%
     padding: 0 5px
-    //&::after
-      content: ""
-      width: 0
-      height: 0
-      border-right: 40px solid transparent
-      border-left: 40px solid transparent
-      border-bottom: 34px solid $amarelo
-      position: absolute
-      top: -34px
-      left: 0
+
 
   #linha-quatro-irregular
     padding: 24px 5px
@@ -248,9 +235,7 @@ h2
     background-color: $azul
     text-align: center
     position: relative
-    //margin-top: 65px
-    padding: 50px 0
-    //height: 70px
+    padding: 40px 0
     max-width: 360px
     font-size: 0.8rem
     -webkit-border-top-left-radius: 35px
