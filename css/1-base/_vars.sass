@@ -1,0 +1,40 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Playball|Roboto:400,700')
+
+//  Colors
+$verde: rgba(85, 146, 99, 0.75)
+$roxo: rgba(126, 92, 143, 0.7803921568627451)
+$vermelho: #bf0811b0
+$amarelo: rgba(228, 198, 45, 0.75)
+$azul: rgba(118, 170, 219, 0.75)
+
+
+//  Fonts
+$playball: 'Playball', cursive
+$roboto: 'Roboto', sans-serif
+
+//  Tipografy
+body
+	font-family: $roboto
+	line-height: 1.6
+	//color:
+
+h2, h3
+	font-family: $playball
+
+h2
+	font-size: 3.2rem
+
+//  Mixins
+
+@mixin border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+.row-eq-height
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
