@@ -138,7 +138,7 @@ h2
   .borda-vermelha
     border: 5px solid $vermelho
     border-radius: 20px
-    padding: 5px
+    padding: 20px 5px 5px 5px
     position: relative
 
     span
@@ -159,6 +159,7 @@ h2
         padding: 0 5px
 
   h3
+    margin-top: 30px
     background-color: $vermelho
     &::after
       border-left: 20px solid $vermelho
@@ -175,12 +176,34 @@ h2
     background-color: $vermelho
     text-align: center
     position: relative
-    margin-top: 65px
-    padding: 5px 2px
+    //margin-top: 65px
+    padding: 20px 2px
     //overflow: hidden
     -webkit-border-radius: 10px
     -moz-border-radius: 10px
     border-radius: 10px
+    min-height: 100px
+    overflow: hidden
+    max-width: 350px
+
+@media (max-width: 992px)
+  #linha-tres
+    display: block
+    h3
+      margin-left: auto
+    .borda-vermelha
+      margin: 30px 0
+      display: flex
+      p
+        font-size: 1rem
+        padding: 40px 20px
+
+@media (max-width: 768px)
+  #linha-tres
+    .borda-vermelha
+      display: block
+
+
 
 // linha-quatro
 #linha-quatro
@@ -191,6 +214,7 @@ h2
 
   h3
     background-color: $amarelo
+    margin-top: 30px
     &::after
       border-left: 20px solid $amarelo
   p
@@ -198,11 +222,15 @@ h2
     background-color: $amarelo
     text-align: center
     position: relative
-    margin-top: 65px
-    padding: 5px 2px
+    //margin-top: 65px
+    padding: 20px 2px
+    //overflow: hidden
     -webkit-border-radius: 10px
     -moz-border-radius: 10px
     border-radius: 10px
+    min-height: 100px
+    overflow: hidden
+    max-width: 350px
   span
     font-size: 0.75rem
     position: absolute
@@ -210,18 +238,40 @@ h2
     padding: 0 5px
   #borda-amarela-span-um
     bottom: -9px
-    left: 6%
+    left: 50%
+    margin-left: -103.5px
   #borda-amarela-span-dois
     bottom: -9px
-    left: 75%
+    left: 50%
+    margin-left: -73px
     padding: 0 5px
 
 
   #linha-quatro-irregular
     padding: 24px 5px
-    &::after
-      border-right: 96px solid transparent
-      border-left: 96px solid transparent
+    max-width: none
+    margin: 30px 0
+
+
+@media (max-width: 992px)
+  #linha-quatro
+    display: block
+    h3
+      margin-left: auto
+    .borda-amarela
+      margin: 30px 0
+      display: flex
+      p
+        font-size: 1rem
+        padding: 40px 20px
+
+    #linha-quatro-irregular
+      font-size: 1rem
+
+@media (max-width: 768px)
+  #linha-quatro
+    .borda-amarela
+      display: block
 
 // linha-cinco
 #linha-cinco
