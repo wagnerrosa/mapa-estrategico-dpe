@@ -17,7 +17,7 @@
 .row
   margin-top: 20px
 .fundo-branco
-  background-color: white
+  background-color: $branco
 #titulo
   margin: 80px 0 40px
   text-align: center
@@ -27,7 +27,7 @@ h3
   padding: 20px 0 20px 25px
   position: relative
   max-width: 182px
-  color: white
+  color: $branco
   margin: auto
   &::after
     content: ""
@@ -59,7 +59,7 @@ h3
     height: 0
     border-right: 35px solid transparent
     border-left: 35px solid transparent
-    border-bottom: 25px solid white
+    border-bottom: 25px solid $branco
     position: absolute
     top: -25px
     left: 50%
@@ -92,7 +92,7 @@ h2
     p
       font-size: 1.2rem
     .cabecalho
-      background-color: white
+      background-color: $branco
       border: none
       padding: 20px 40px
       margin: 10px 0
@@ -142,21 +142,22 @@ h2
     position: relative
 
     span
-      font-size: 0.75rem
+      font-size: 0.9rem
       position: absolute
-      background-color: white
-      padding: 0 5px
+      background-color: $branco
+      padding: 0 10px
+      text-transform: uppercase
+      font-weight: bold
+      white-space: nowrap
+      bottom: -14px
 
     #borda-vermelha-span-um
-      bottom: -9px
       left: 50%
-      margin-left: -79px
+      margin-left: -114px
 
     #borda-vermelha-span-dois
-        bottom: -9px
         left: 50%
-        margin-left: -86.5px
-        padding: 0 5px
+        margin-left: -129px
 
   h3
     margin-top: 30px
@@ -186,6 +187,20 @@ h2
     overflow: hidden
     max-width: 350px
 
+@media (max-width: 1200px)
+  #linha-tres
+    .borda-vermelha
+      span
+        font-size: 0.7rem
+        padding: 0 10px
+        bottom: -10px
+      #borda-vermelha-span-um
+        margin-left: -91.5px
+      #borda-vermelha-span-dois
+        margin-left: -102.5px
+
+
+
 @media (max-width: 992px)
   #linha-tres
     display: block
@@ -197,6 +212,17 @@ h2
       p
         font-size: 1rem
         padding: 40px 20px
+
+      span
+        font-size: 1.1rem
+        padding: 0 25px
+        bottom: -17px
+
+      #borda-vermelha-span-um
+        margin-left: -152.5px
+
+      #borda-vermelha-span-dois
+        margin-left: -170.5px
 
 @media (max-width: 768px)
   #linha-tres
@@ -232,19 +258,22 @@ h2
     overflow: hidden
     max-width: 350px
   span
-    font-size: 0.75rem
+    font-size: 0.9rem
     position: absolute
-    background-color: white
+    background-color: $branco
     padding: 0 5px
+    text-transform: uppercase
+    font-weight: bold
+    //white-space: nowrap
+    bottom: -14px
+    left: 50%
+
   #borda-amarela-span-um
-    bottom: -9px
-    left: 50%
-    margin-left: -103.5px
+    margin-left: -125px
+    text-align: center
+    bottom: -29px
   #borda-amarela-span-dois
-    bottom: -9px
-    left: 50%
-    margin-left: -73px
-    padding: 0 5px
+    margin-left: -105px
 
 
   #linha-quatro-irregular
@@ -267,6 +296,21 @@ h2
         border-bottom: 15px solid transparent
         border-left: 12px solid $amarelo
 
+@media (max-width: 1200px)
+  #linha-quatro
+    span
+      font-size: 0.7rem
+      padding: 0 10px
+      bottom: -10px
+    #borda-amarela-span-um
+      margin-left: -84.5px
+      text-align: center
+      bottom: -18px
+      max-width: 170px
+
+    #borda-amarela-span-dois
+      margin-left: -88.5px
+
 
 
 @media (max-width: 992px)
@@ -283,6 +327,20 @@ h2
 
     #linha-quatro-irregular
       font-size: 1rem
+
+    span
+      font-size: 1.1rem
+      padding: 0 25px
+      bottom: -17px
+
+    #borda-amarela-span-um
+      margin-left: -198px
+      text-align: center
+      bottom: -17px
+      max-width: none
+
+    #borda-amarela-span-dois
+      margin-left: -148.5px
 
 @media (max-width: 768px)
   #linha-quatro
@@ -373,16 +431,16 @@ a
 
 .btn-roxo
   &:hover
-    box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px $roxo
+    box-shadow: 0px 0px 0px 2px $branco, 0px 0px 0px 4px $roxo
 
 .btn-azul
   &:hover
-    box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px $azul
+    box-shadow: 0px 0px 0px 2px $branco, 0px 0px 0px 4px $azul
 
 .btn-vermelho
   &:hover
-    box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px $vermelho
+    box-shadow: 0px 0px 0px 2px $branco, 0px 0px 0px 4px $vermelho
 
 .btn-amarelo
   &:hover
-    box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px $amarelo
+    box-shadow: 0px 0px 0px 2px $branco, 0px 0px 0px 4px $amarelo
